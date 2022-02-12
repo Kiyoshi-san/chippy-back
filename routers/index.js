@@ -6,6 +6,7 @@ import userRouter from "./userRouter.js";
 import categoryRouter from "./categoryRouter.js";
 import orderRouter from "./orderRouter.js";
 import uploadRouter from "./uploadRouter.js";
+import cartRouter from "./cartRouter.js";
 
 // ALLOWING process.env
 dotenv.config();
@@ -48,5 +49,6 @@ indexRouter.use("/api/users", userRouter);
 indexRouter.use("/api/categories", categoryRouter);
 indexRouter.use("/api/products", productRouter);
 indexRouter.use("/api/orders", orderRouter);
+indexRouter.use("/api/cart", cartRouter);
 
 export default indexRouter;
